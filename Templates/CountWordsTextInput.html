@@ -1,0 +1,9 @@
+<h1> Enter text here: </h1>
+
+<form action="{% url 'WordCounterOutput' %}">
+	<textarea cols="90", rows="20", name="FullText"> </textarea>
+	<br/>
+	<input type="submit", value="Count"/>
+</form>
+
+<a href="{% url 'about' %}"> About website </a>

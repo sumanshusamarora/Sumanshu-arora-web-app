@@ -1,0 +1,15 @@
+<h1> Original text entered is:  </h1>
+{{FullText}}
+
+<h1> Count of words in above sentence is: {{FullTextLen}} </h1>
+
+<h1> Word Count Frequency: </h1>
+
+{% for word, counttotal in SortedWordDict %}
+  {{word}} - {{counttotal}}
+  <br/>
+{% endfor %}
+
+</br>
+</br>
+<a href="{% url 'WordCounterInput' %}"> Start with new text </a> </p> <a href="{% url 'home' %}"> Home </a>
